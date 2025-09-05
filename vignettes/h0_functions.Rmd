@@ -1,6 +1,6 @@
 ---
 title: "Allowing the lower asymptote parameter to vary freely"
-author: "Tommy Matheis, Phineus Choi, Sam Butler, Jo Hardin"
+author: "Thomas Matheis, Phineus Choi, Sam Butler, Jo Hardin"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
