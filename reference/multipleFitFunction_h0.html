@@ -73,8 +73,8 @@ fit (lowest residual sum of squares), together with counts of total and successf
 
 
 <dl><dt id="arg-datainput">dataInput<a class="anchor" aria-label="anchor" href="#arg-datainput"></a></dt>
-<dd><p>A data frame (with columns `time` and `intensity`) or a list
-containing `timeIntensityData` and optional `dataScalingParameters`.  See
+<dd><p>A data frame (with columns <code>time</code> and <code>intensity</code>) or a list
+containing <code>timeIntensityData</code> and optional <code>dataScalingParameters</code>.  See
 <code><a href="dataCheck.html">dataCheck</a></code> for details.</p></dd>
 
 
@@ -84,12 +84,12 @@ tracking/identification when fitting multiple curves.  Defaults to NA.</p></dd>
 
 
 <dt id="arg-model">model<a class="anchor" aria-label="anchor" href="#arg-model"></a></dt>
-<dd><p>Character; either `"sigmoidal"` or `"doublesigmoidal"`, indicating
+<dd><p>Character; either <code>"sigmoidal"</code> or <code>"doublesigmoidal"</code>, indicating
 which underlying model to fit.</p></dd>
 
 
 <dt id="arg-n-runs-min">n_runs_min<a class="anchor" aria-label="anchor" href="#arg-n-runs-min"></a></dt>
-<dd><p>Integer; the minimum number of *successful* fits to perform
+<dd><p>Integer; the minimum number of <em>successful</em> fits to perform
 before stopping.  Defaults to 20.</p></dd>
 
 
@@ -105,18 +105,17 @@ number of successful fits, etc.) after each successful fit.  Defaults to FALSE.<
 
 <dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
 <dd><p>Additional arguments passed to the underlying fitting function:
-<code><a href="sigFit.html">sigFit</a></code> when `model = "sigmoidal"`, or
-<code><a href="sigFit2.html">sigFit2</a></code> when `model = "doublesigmoidal"`.</p></dd>
+<code><a href="sigFit.html">sigFit</a></code> when <code>model = "sigmoidal"</code>, or
+<code><a href="sigFit2.html">sigFit2</a></code> when <code>model = "doublesigmoidal"</code>.</p></dd>
 
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A named list (invisibly) with components:
-  * All fit parameters and goodness‐of‐fit metrics from the best run,
-  * <code>betterFit</code>: count of times a new best residual was found,
-  * <code>correctFit</code>: count of successful fits,
-  * <code>totalFit</code>: total number of attempts made.</p>
-    </div>
+    <p>A named list (invisibly) with components:</p><ul><li><p>All fit parameters and goodness‐of‐fit metrics from the best run,</p></li>
+<li><p><code>betterFit</code>: count of times a new best residual was found,</p></li>
+<li><p><code>correctFit</code>: count of successful fits,</p></li>
+<li><p><code>totalFit</code>: total number of attempts made.</p></li>
+</ul></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
